@@ -21,10 +21,12 @@ Then this dataframe is sampled randomly, to facilitate the splitting. And then 1
      Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.750
 
 The visulisation after eval resulted in examples like these - 
+
 ![image](https://github.com/user-attachments/assets/9ba4eba6-27c6-4003-b22c-ede4a7777ef6)
 ![image](https://github.com/user-attachments/assets/3e2cbd79-4eaf-4f1e-a044-8968d672ebd2)
 
 Since the number of classes is 91 in DINO, it picked up objects like 'chair', and 'car' too. But we expect after fine-tuning, it will only recognise 'pedestrian'.
+
 ![image](https://github.com/user-attachments/assets/e4b99dbc-151c-4c1c-879b-e7458858c5eb)
 
 
