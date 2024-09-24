@@ -7,18 +7,32 @@ Evaluating the DINO object detection model on a custom pedestrian dataset.
 Then this dataframe is sampled randomly, to facilitate the splitting. And then 160 images make the training set. And 40 images make the validation set. New json files are created for both sets' annotations.  
 
 - dinoonpedestrian.ipynb was trained on Kaggle with GPU T4x2 accelerators. I cloned the DINO repository and installed the dependencies. When evaluated on pedestrian data and the checkpoint path of 4scale DINO, I received the following metrics -
+
+
      Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.486
+  
      Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.823
+  
      Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.509
+  
      Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.372
+  
      Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.599
+  
      Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.697
+  
      Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.108
+  
      Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.506
+  
      Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.602
+  
      Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.545
+  
      Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.663
+  
      Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.750
+ 
 
 The visulisation after eval resulted in examples like these - 
 
